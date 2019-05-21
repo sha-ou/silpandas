@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 
 
-class SilPandas():
+class SilPandasClass():
     def __init__(self, on,
                  avaf='ava.csv', oxif='oxi.csv',
                  slpf='slp.csv', vthf='vth.csv'):
@@ -134,7 +134,7 @@ class SilPandas():
 
 
 if __name__ == '__main__':
-    silpandas = SilPandas(
+    silpandas = SilPandasClass(
         on=['jfetw', 'pdriftt', 'pdriftc', 'pdriftw', 'cslthick', 'cslconc'])
     alldf = silpandas.calcalldf()
     print(alldf)
